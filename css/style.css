@@ -19,4 +19,140 @@
     outline: none;
 }
 
+:root {
+    --main-gray: #292a2d
+}
 
+a {
+    text-decoration: none;
+}
+
+/* section1 styles */
+.section1 {
+    background-image: url('../images/dark_tint.png'), url("../images/bokeh_car_lights_bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 85vh;
+    width: 100%;
+}
+
+/* navabr styles */
+
+
+nav {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    padding: 20px !important;
+}
+
+nav.sticky {
+    padding: 40px 0;
+}
+
+
+
+/* offcanvas */
+.offcanvas-title {
+    margin: 0 auto;
+    display: block;
+}
+
+.offcanvas {
+    background-color: var(--main-gray);
+}
+
+.navbar-nav li a:not(.signUp) {
+    color: white !important;
+}
+
+.offcanvas-open {
+    border: none;
+}
+
+.navbar-toggler {
+    outline: none;
+}
+
+.fa-bars,
+.fa-xmark {
+    color: #fff;
+}
+
+
+/* media queries */
+
+
+@media (max-width : 992px) {
+    .offcanvas {
+        width: 250px !important;
+    }
+
+    .offcanvas-start-lg {
+        top: 0;
+        left: 0;
+        border-right: 1px solid #00000033;
+        transform: translateX(-100%);
+    }
+
+    .navbar-brand {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        margin: 0 auto;
+    }
+
+
+}
+
+@media (min-width : 992px) {
+    .offcanvas {
+        visibility: visible;
+        position: relative;
+        background: none;
+        border: none;
+        justify-content: end;
+
+    }
+
+    .offcanvas-open {
+        display: none;
+    }
+
+    .navbar-brand {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.navbarItems {
+    background-color: var(--main-gray);
+    padding: 15px;
+}
+
+.signUp {
+    background-color: #fff;
+    color: var(--main-gray) !important;
+}
+
+.my-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+.nav-item{
+    margin: 10px 20px;
+}
+.fa-bars.spin,.fa-xmark.spin{
+    transform: rotate(90deg);
+}
+
+.fa-bars,.fa-xmark{
+    transition: all 0.3s ease-in-out;
+}
