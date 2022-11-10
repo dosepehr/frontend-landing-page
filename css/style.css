@@ -26,6 +26,7 @@
     --main-green: #00bd65;
     --main-yellow: #f9c700;
     --secondar-gray: #474747;
+    --border-color:#90909040;
 }
 
 a {
@@ -200,7 +201,7 @@ nav.sticky {
 
 /* section2 styles */
 .cards {
-    border: solid 1px #90909040;
+    border: solid 1px var(--border-color);
     padding: 20px;
     border-radius: 5px;
     background-color: white;
@@ -228,8 +229,22 @@ nav.sticky {
 
 .section2 {
     background-color: #f5f5f5;
-    border: solid 1px #90909040;
+    border: solid 1px var(--border-color);
 }
 .cardsIntro{
     color: var(--secondar-gray);
+}
+/* section2 styles */
+
+.placeHolderPhoto{
+    border-radius: 50%;
+}
+.aboutSection{
+    padding: 30px;
+    border-bottom: 1px solid var(--border-color);
+    border-top: 1px solid var(--border-color);
+}
+.aboutSection p{
+    color: var(--secondar-gray);
+    font-size:1rem;
 }
