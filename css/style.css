@@ -20,7 +20,8 @@
 }
 
 :root {
-    --main-gray: #292a2d
+    --main-gray: #292a2d;
+    --main-blue: #1e90ff;
 }
 
 a {
@@ -74,6 +75,12 @@ nav.sticky {
 
 .navbar-toggler {
     outline: none;
+}
+
+.logo {
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
 }
 
 .fa-bars,
@@ -146,13 +153,43 @@ nav.sticky {
     cursor: pointer;
     text-align: center;
 }
-.nav-item{
+
+.nav-item {
     margin: 10px 20px;
 }
-.fa-bars.spin,.fa-xmark.spin{
+
+.fa-bars.spin,
+.fa-xmark.spin {
     transform: rotate(90deg);
 }
 
-.fa-bars,.fa-xmark{
+.fa-bars,
+.fa-xmark {
     transition: all 0.3s ease-in-out;
+}
+
+/* intro styles */
+
+.intro {
+    margin-top: 30vh;
+}
+
+.intro h1 {
+    font-size: calc(1rem + 1.5vw);
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.intro p {
+    color: #fff;
+    font-size: calc(1rem + 0.5vw);
+    line-height: 3;
+}
+
+.intro a {
+    background-color: var(--main-blue);
+    width: 200px;
+    margin: 0 auto;
+    color: #fff;
 }
