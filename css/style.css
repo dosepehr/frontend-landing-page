@@ -70,7 +70,7 @@ nav.sticky {
     background-color: var(--main-gray);
 }
 
-.navbar-nav li a:not(.signUp) {
+.navbar-nav li a:not(.btn1) {
     color: white !important;
 }
 
@@ -147,21 +147,8 @@ nav.sticky {
     padding: 15px;
 }
 
-.signUp {
-    background-color: #fff;
-    color: var(--main-gray) !important;
-}
 
-.my-btn {
-    padding: 10px 20px;
-    border-radius: 30px;
-    cursor: pointer;
-    text-align: center;
-    background-color: var(--main-blue);
-    width: 200px;
-    margin: 0 auto;
-    color: #fff;
-}
+
 
 .nav-item {
     margin: 10px 20px;
@@ -175,6 +162,18 @@ nav.sticky {
 .fa-bars,
 .fa-xmark {
     transition: all 0.3s ease-in-out;
+}
+
+.my-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn1 {
+    background-color: #fff;
+    color: var(--main-gray);
 }
 
 /* intro styles */
@@ -194,6 +193,13 @@ nav.sticky {
     color: #fff;
     font-size: calc(1rem + 0.5vw);
     line-height: 3;
+}
+
+.btn2 {
+    background-color: var(--main-blue);
+    color: #fff;
+    width: 200px;
+    margin: 0 auto;
 }
 
 /* section2 styles */
@@ -253,7 +259,7 @@ nav.sticky {
 }
 
 
-/* sectio4 styles */
+/* section4 styles */
 .login p {
     line-height: 2;
     margin-top: 20px;
@@ -262,4 +268,21 @@ nav.sticky {
 
 .login a {
     margin-bottom: 50px;
+}
+
+/* section5 styles */
+.form {
+    background-color: var(--main-blue);
+    padding-bottom: 60px;
+}
+
+.formInfo {
+    color: #fff;
+}
+
+
+/* buttons */
+.btn3 {
+    background-color: var(--main-gray);
+    color: #fff;
 }
