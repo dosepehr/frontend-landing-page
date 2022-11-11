@@ -286,3 +286,17 @@ nav.sticky {
     background-color: var(--main-gray);
     color: #fff;
 }
+
+/* footer */
+footer{
+    background-color: var(--secondar-gray);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.helloSepehr{
+    color: var(--main-blue);
+
+}
